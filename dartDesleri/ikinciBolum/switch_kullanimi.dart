@@ -62,7 +62,7 @@ void main(List<String> args) {
   }
   */
 
-  int sayi = 31;
+  /* int sayi = 31;
   int bolum = (sayi / 10).toInt();
 
   switch (bolum) {
@@ -81,5 +81,5 @@ void main(List<String> args) {
     case 0:
       print("Sayi 10dan kucuktur.");
       break;
-  }
+  } */
 }

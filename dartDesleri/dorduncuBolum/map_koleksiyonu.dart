@@ -26,7 +26,7 @@ void main(List<String> args) {
   };
 
   // * Bos Map koleksiyonu...
-  Map<String, dynamic> deneme = Map();
+  // Map<String, dynamic> deneme = Map();
   Map<String, dynamic> deneme2 = Map();
 
   deneme2["yas"] = 55;

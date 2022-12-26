@@ -78,7 +78,7 @@ void main(List<String> args) {
   bool kosul1 = false;
   bool kosul2 = false;
 
-  print(kosul1 && kosul2);
+  // print(kosul1 && kosul2);
   print(kosul1 || kosul2);
   print(!kosul1);
 }

@@ -11,7 +11,7 @@
 */
 
 void main(List<String> args) {
-  int sayi = 4;
+  // int sayi = 4;
   List<int> sayilar = List.filled(5, 2, growable: false);
   sayilar[0] = 4;
   sayilar[1] = 2;

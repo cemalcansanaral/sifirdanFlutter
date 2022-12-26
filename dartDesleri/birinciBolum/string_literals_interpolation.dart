@@ -16,8 +16,8 @@ void main(List<String> args) {
   String isim = "Cemal";
   String ikinciIsim = "Can";
   String soyIsim = "Şanaral";
-  var kurs = 'Dart\'ın Kullanımı';
-  String kursTanimi = "Dart'ı ve Flutter'ı Öğreneceğiz.";
+  // var kurs = 'Dart\'ın Kullanımı';
+  // String kursTanimi = "Dart'ı ve Flutter'ı Öğreneceğiz.";
 
   //print(isim + " " + ikinciIsim + " " + soyIsim);
   print("$isim $ikinciIsim $soyIsim");
