@@ -17,7 +17,7 @@ void main(List<String> args) {
   cemal.ogrAd = 'Cemal Can Sanaral';
   cemal.ogrNo = 2023;
   cemal.aktifMi = true;
-  var poyraz = Ogrenci();
+  //var poyraz = Ogrenci();
 }
 
 class Ogrenci {
