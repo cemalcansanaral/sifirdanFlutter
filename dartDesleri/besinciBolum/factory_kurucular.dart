@@ -1,6 +1,6 @@
 void main(List<String> args) {
-  Ogrenci cemal = Ogrenci(1, "Cemal Can");
-  var poyraz = Ogrenci.idSiz("Poyraz");
+  //Ogrenci cemal = Ogrenci(1, "Cemal Can");
+  //var poyraz = Ogrenci.idSiz("Poyraz");
   var can = Ogrenci.factoryKurucusu(-5, "Can");
 
   print(can.id);
