@@ -40,6 +40,14 @@ void main(List<String> args) {
 
   bmw.bilgileriSoyle();
   bmw.yasHesapla();
+
+  var citroen = Araba.markasizKurucuMetot(true, 2015);
+  Araba suzuki = Araba.modelYilsizKurucuMetot(true, "Suzuki");
+
+  citroen.bilgileriSoyle();
+  citroen.yasHesapla();
+  suzuki.bilgileriSoyle();
+  suzuki.yasHesapla();
 }
 
 class Araba {
@@ -51,6 +59,12 @@ class Araba {
     /* this.modelYili = modelYili;
     this.marka = marka;
     this.otomatikMi = otomatikMi; */
+  }
+
+  Araba.markasizKurucuMetot(this.otomatikMi, this.modelYili);
+  Araba.modelYilsizKurucuMetot(bool otomatikMi, String marka) {
+    this.otomatikMi = otomatikMi;
+    this.marka = marka;
   }
 
   /* Araba(int modelYili, String marka, bool otomatikMi) {
@@ -70,6 +84,10 @@ class Araba {
   }
 
   void yasHesapla() {
-    print("Arabanin yasi: ${2023 - modelYili!}");
+    if (modelYili == null) {
+      print("Model yili belli olmadigi icin hesaplama yapilamamistir.!");
+    } else {
+      print("Arabanin yasi: ${2023 - modelYili!}");
+    }
   }
 }
