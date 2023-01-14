@@ -30,19 +30,36 @@
     */
 */
 void main(List<String> args) {
-  //Araba bmw = Araba(2023, "BMW", true);
-  Araba(2023, "BMW", true);
+  Araba bmw = Araba(2020, "BMW", true);
+  //Araba(2023, "BMW", true);
   /*
   bmw.marka = "BMW";
   bmw.modelYili = 2023;
   bmw.otomatikMi = true;
   */
 
-//bmw.bilgileriSoyle();
+  bmw.bilgileriSoyle();
+  bmw.yasHesapla();
 }
 
 class Araba {
-  Araba(int? modelYili, String? marka, bool? otomatikMi) {
+  int? modelYili;
+  String? marka;
+  bool? otomatikMi;
+
+  Araba(this.modelYili, this.marka, this.otomatikMi) {
+    /* this.modelYili = modelYili;
+    this.marka = marka;
+    this.otomatikMi = otomatikMi; */
+  }
+
+  /* Araba(int modelYili, String marka, bool otomatikMi) {
+    this.modelYili = modelYili;
+    this.marka = marka;
+    this.otomatikMi = otomatikMi;
+  } */
+
+  void bilgileriSoyle() {
     if (otomatikMi == true) {
       print(
           "Arabanin Markasi: $marka, Arabanin Modeli: $modelYili, Otomatik Mi: Evet");
@@ -52,13 +69,7 @@ class Araba {
     }
   }
 
-  /* void bilgileriSoyle() {
-    if (otomatikMi == true) {
-      print(
-          "Arabanin Markasi: $marka, Arabanin Modeli: $modelYili, Otomatik Mi: Evet");
-    } else {
-      print(
-          "Arabanin Markasi: $marka, Arabanin Modeli: $modelYili, Otomatik Mi: Hayir");
-    }
-  } */
+  void yasHesapla() {
+    print("Arabanin yasi: ${2023 - modelYili!}");
+  }
 }
