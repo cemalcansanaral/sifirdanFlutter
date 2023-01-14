@@ -12,10 +12,16 @@
   * yapılması için kullanılırç
 */
 
-import 'veritabani_islemleri.dart';
+import 'musteri.dart';
+//import 'veritabani_islemleri.dart';
 
 void main(List<String> args) {
-  VeritabaniIslemleri db = VeritabaniIslemleri();
+  Musteri m1 = Musteri(325);
+  m1.bilgileriYazdir();
+  m1.musteriNoAta = 350;
+  print(m1.musteriNoSoyle);
+
+  /* VeritabaniIslemleri db = VeritabaniIslemleri();
 
   VeritabaniIslemleri.loginWithNameandPassword("cemalcan", "123");
 
@@ -25,5 +31,5 @@ void main(List<String> args) {
     print("Veritabanina basariyla baglandin...");
   } else {
     print("Veritabani baglantisi basarisiz...");
-  }
+  } */
 }
