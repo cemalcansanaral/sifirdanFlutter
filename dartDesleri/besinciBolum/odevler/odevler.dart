@@ -19,6 +19,7 @@ void main(List<String> args) {
   print("Cevre: ${cemberDaire.cevreHesapla()}");
 
   Ogrenci ogrenci = Ogrenci(id: 5, notDegeri: 10);
+  print(ogrenci.id);
 
   List<Ogrenci> tumOgrenciler = List.filled(2, Ogrenci());
 
